@@ -1,0 +1,16 @@
+{
+  "name": "ngrok-raspi",
+  "version": "1.0.0",
+  "description": "Place ngrok.service to /etc/systemd/system/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord-webhook-node": "^1.1.8",
+    "ngrok": "^4.2.2"
+  }
+}
