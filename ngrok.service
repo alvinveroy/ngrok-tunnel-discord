@@ -1,13 +1,13 @@
 [Unit]
-Description=Ngrok
-After=network.service
+Description=Ngrok SSH Tunnel
+After=syslog.target network.target
 
 [Service]
-type=simple
+Type=simple
+Restart=always
+RestartSec=1
+ExecStart=/home/ubuntu/start.sh
 User=ubuntu
-WorkingDirectory=/home/ubuntu
-ExecStart=/var/lib/snapd/snap/bin/ngrok start --all --config="/home/ubuntu/.ngrok2/ngrok.yml"
-Restart=on-failure
 
 [Install]
 WantedBy=multi-user.target
