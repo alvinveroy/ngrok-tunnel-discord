@@ -3,7 +3,6 @@ const ngrok = require('ngrok');
 const { Webhook, } = require('discord-webhook-node');
 const hook = new Webhook(process.env.DISCORD_WEBHOOK);
 
-const fbbot = ngrok.connect(5000);
 const ssh = async _ => {
     const url = await ngrok.connect({
         proto : 'tcp',
